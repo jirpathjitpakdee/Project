@@ -94,8 +94,8 @@
         <td>0954265568</td>
     </tr>
     <tr>
-        <td>Checkin</td>
-        <tdวันที่ผู้ใช้จะCheck in </td>
+        <td>CheckIn</td>
+        <td>วันที่ผู้ใช้จะ Check In</td>
         <td>Date</td>
         <td>2023-01-07</td>
     </tr>
