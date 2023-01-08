@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dropdown {
+    margin-right: 100px;
+}
+
+span {
+    margin-left: 5px;
+}
+
+b {
+    margin-left: 15px;
+}
+

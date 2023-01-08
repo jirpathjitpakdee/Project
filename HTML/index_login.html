@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link CSS Style -->
+    <link rel="stylesheet" href="/CSS/index.css">
+    <!-- link JavaScript -->
+    <script src="/JS/index.js"></script>
+    <script src="/JS/login.js"></script>
+    <title>Last Camp</title>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap'); </style>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); </style>
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
+</head>
+<body  onload="loadname()">
+    
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="font-family: 'Permanent Marker', cursive;"><i class="fa-sharp fa-solid fa-campground text-success" style="margin-right: 10px;"></i>Last Camp</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+              <a class="nav-link active " aria-current="page" href="#">หน้าหลัก</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="table.html">รายการจอง</a>
+              </li>
+              
+          </ul>
+          <div class="dropdown">
+              <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="mdo" width="32" height="32" class="rounded-circle" ><span id="User"></span>
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="index.html">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      </nav>
+</header>
+    
+<main >
+
+  <section class="py-5 text-center  " style="background-image: url(https://th.bing.com/th/id/R.f22067f2505ea5a16fd75333385d5889?rik=JzUi19PF3IwKzA&pid=ImgRaw&r=0); background-size: cover; ">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <img width="100%" height="400" class=" mx-auto d-block mt-3"  src="https://cdn2.vectorstock.com/i/thumb-large/95/66/camping-tent-object-icon-vector-21459566.jpg" style="border-radius: 50%; width: 200px; height: 200px; " >
+        <h1 class="fw-light mt-5 text-light" style="font-family: 'Permanent Marker', cursive; font-size: 60px;  ">Last Camp</h1>
+        <p style="color: white;">เว็บจองลานกางเต็นท์ ที่สะดวก ง่าย และรวดเร็ว</p>
+        
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 " style="background-image: linear-gradient(130deg, #1abc9c, #2ecc71); background-repeat: no-repeat; height: 100%;">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card bg-dark text-light border boeder-3 border-light" style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  >
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.tnnthailand.com/static/images/3e7e240d-160e-422b-85b0-32e3ebcaa56b.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><b x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-top: 5px;">ปางหวัน โฮมสเตย์ สวนผึ้ง</b></img>
+
+            <div class="card-body">
+              <p class="card-text"><i class="fa-sharp fa-solid fa-location-dot text-success" style="margin-right: 10px; "></i>ที่อยู่ : ต.ตะนาวศรี อ.สวนผึ้ง จ.ราชบุรี</p>
+              <p class="card-text"><i class="fa-solid fa-phone text-success" style="margin-right: 10px;"></i>เบอร์ติดต่อ : 081-700-1133</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="camp.html" type="button" class="btn btn-success btn-m "  onclick="loadlocation(this)" name="ปางหวัน โฮมสเตย์ สวนผึ้ง" style="width: 100px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;"><i class="fa-solid fa-book-bookmark" style="margin-right: 10px;"></i>จอง</a>
+                  
+                </div>
+                <small class="">250 บาท/คน</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-light border boeder-3 border-light" style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.tnnthailand.com/static/images/ad40e4c5-82a0-4ff1-adc0-20895ebf200e.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><b x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-top: 5px;">ริมธารา แคมป์ปิ้ง จ.ราชบุรี</b></img>
+
+            <div class="card-body" >
+              <p class="card-text"><i class="fa-sharp fa-solid fa-location-dot text-success" style="margin-right: 10px; "></i>ที่อยู่ :  ต.ตะนาวศรี อ.สวนผึ้ง จ.ราชบุรี</p>
+              <p class="card-text"><i class="fa-solid fa-phone text-success" style="margin-right: 10px;"></i>เบอร์ติดต่อ : 063-073-8554</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="camp.html" type="button" class="btn btn-success btn-m " onclick="loadlocation(this)" name="ริมธารา แคมป์ปิ้ง" style="width: 100px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;"><i class="fa-solid fa-book-bookmark" style="margin-right: 10px;"></i>จอง</a>
+                </div>
+                <small class="">250 บาท/คน</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-light border boeder-3 border-light" style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  >
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.tnnthailand.com/static/images/0afc75e9-ceb9-4958-9dd7-032ab1724d93.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><b x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-top: 5px;">สวนยายเภาแคมป์ปิ้ง นครนายก</b></img>
+
+            <div class="card-body">
+              <p class="card-text"><i class="fa-sharp fa-solid fa-location-dot text-success" style="margin-right: 10px; "></i>ที่อยู่ : ต.สาริกา อ.เมืองนครนายก จ.นครนายก</p>
+              <p class="card-text"><i class="fa-solid fa-phone text-success" style="margin-right: 10px;"></i>เบอร์ติดต่อ : 092-449-9954</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="camp.html" type="button" class="btn btn-success btn-m " onclick="loadlocation(this)" name="สวนยายเภาแคมป์ปิ้ง " style="width: 100px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;"><i class="fa-solid fa-book-bookmark" style="margin-right: 10px;"></i>จอง</a>
+                </div>
+                <small class="">250 บาท/คน</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card bg-dark text-light border boeder-3 border-light" style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  >
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.tnnthailand.com/static/images/509a9ee1-f3e4-475f-b11d-30e48e41bfc7.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><b x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-top: 5px;">Camp Tales Cafe - Glamp n Grill Chonburi ชลบุรี</b></img>
+
+            <div class="card-body">
+              <p class="card-text"><i class="fa-sharp fa-solid fa-location-dot text-success" style="margin-right: 10px; "></i>ที่อยู่ : ต.หนองรี อ.เมืองชลบุรี จ.ชลบุรี</p>
+              <p class="card-text"><i class="fa-solid fa-phone text-success" style="margin-right: 10px;"></i>เบอร์ติดต่อ : 086-398-8642</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="camp.html" type="button" class="btn btn-success btn-m "  onclick="loadlocation(this)" name="Camp Tales Cafe " style="width: 100px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;"><i class="fa-solid fa-book-bookmark" style="margin-right: 10px;"></i>จอง</a>
+                </div>
+                <small class="">250 บาท/คน</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-light border boeder-3 border-light" style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  >
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.tnnthailand.com/static/images/b7212a7f-123c-4575-b731-8409598782a8.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><b x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-top: 5px;">ไร่รวยริน วังน้ำเขียว จ.นครราชสีมา</b></img>
+
+            <div class="card-body">
+              <p class="card-text"><i class="fa-sharp fa-solid fa-location-dot text-success" style="margin-right: 10px; "></i>ที่อยู่ : ต.วังน้ำเขียว อ.วังน้ำเขียว จ.นครราชสีมา</p>
+              <p class="card-text"><i class="fa-solid fa-phone text-success" style="margin-right: 10px;"></i>เบอร์ติดต่อ : 092-536-4271</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="camp.html"type="button" class="btn btn-success btn-m "  onclick="loadlocation(this)" name="ไร่รวยริน วังน้ำเขียว " style="width: 100px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;"><i class="fa-solid fa-book-bookmark" style="margin-right: 10px;"></i>จอง</a>
+                </div>
+                <small class="">250 บาท/คน</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-light border boeder-3 border-light" style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  >
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.tnnthailand.com/static/images/3eff940f-2237-4d43-8298-476ec90f0810.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><b x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-top: 5px;">บ้านไร่ OZONE แคมป์ปิ้งลานกางเต็นท์ สระบุรี</b></img>
+
+            <div class="card-body">
+              <p class="card-text"><i class="fa-sharp fa-solid fa-location-dot text-success" style="margin-right: 10px; "></i>ที่อยู่ : 44/1 หมู่ 5 บ.ชะอม อ.แก่งคอย จ.สระบุรี</p>
+              <p class="card-text"><i class="fa-solid fa-phone text-success" style="margin-right: 10px;"></i>เบอร์ติดต่อ : 085-275-5213</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="camp.html" type="button" class="btn btn-success btn-m "   onclick="loadlocation(this)" name="บ้านไร่ OZONE  " style="width: 100px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;"><i class="fa-solid fa-book-bookmark" style="margin-right: 10px;"></i>จอง</a>
+                </div>
+                <small class="">250 บาท/คน</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          
+                <div class="card bg-dark text-light border boeder-3 border-light" style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  >
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.tnnthailand.com/static/images/bd902b3a-409f-4778-9836-b192e12c1b40.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><b x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-top: 5px;">จุดกางเต็นท์ลำตะคลอง อุทยานแห่งชาติเขาใหญ่</b></img>
+      
+                  <div class="card-body">
+                    <p class="card-text"><i class="fa-sharp fa-solid fa-location-dot text-success" style="margin-right: 10px; "></i>ที่อยู่ : อุทยานแห่งชาติเขาใหญ่ ตู้ ปณ.9 ปท.ปากช่อง ต.หมูสี อ.ปากช่อง จ.นครราชสีมา</p>
+                    <p class="card-text"><i class="fa-solid fa-phone text-success" style="margin-right: 10px;"></i>เบอร์ติดต่อ : 086-092-6529, 086-092-6531, 037-356-003</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="camp.html"type="button" class="btn btn-success btn-m "  onclick="loadlocation(this)" name="จุดกางเต็นท์ลำตะคลอง"  style="width: 100px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;"><i class="fa-solid fa-book-bookmark" style="margin-right: 10px;"></i>จอง</a>
+                      </div>
+                      <small class="">250 บาท/คน</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-light border boeder-3 border-light" style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  >
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.tnnthailand.com/static/images/bc2a1bb3-6dd2-47d8-8a18-9a18061c01d5.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><b x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-top: 5px;">ลานกางเต็นท์อุทยานแห่งชาติทองผาภูมิ บ้านอีต่องปิล็อก กาญจนบุรี</b></img>
+
+            <div class="card-body">
+              <p class="card-text"><i class="fa-sharp fa-solid fa-location-dot text-success" style="margin-right: 10px; "></i>ที่อยู่ : อุทยานแห่งชาติทองผาภูมิ ตู้ ปณ.18, อ.ทองผาภูมิ จ.กาญจนบุรี</p>
+              <p class="card-text"><i class="fa-solid fa-phone text-success" style="margin-right: 10px;"></i>เบอร์ติดต่อ : 098-252-0359</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="camp.html"type="button" class="btn btn-success btn-m "  onclick="loadlocation(this)" name="อุทยานแห่งชาติทองผาภูมิ" style="width: 100px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;"><i class="fa-solid fa-book-bookmark" style="margin-right: 10px;"></i>จอง</a>
+                </div>
+                <small class="">250 บาท/คน</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-light border boeder-3 border-light" style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  >
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.tnnthailand.com/static/images/3ed4fc63-db8f-4015-90cd-e1434bb8d06c.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><b x="50%" y="50%" fill="#eceeef" dy=".3em" style="margin-top: 5px;">น้ำตกห้วยแม่ขมิ้น อุทยานแห่งชาติเขื่อนศรีนครินทร์ กาญจนบุรี</b></img>
+
+            <div class="card-body">
+              <p class="card-text"><i class="fa-sharp fa-solid fa-location-dot text-success" style="margin-right: 10px; "></i>ที่อยู่ : อุทยานแห่งชาติเขื่อนศรีนครินทร์ ต.ท่ากระดาน อ.ศรีสวัสดิ์ จ.กาญจนบุรี</p>
+              <p class="card-text"><i class="fa-solid fa-phone text-success" style="margin-right: 10px;"></i>เบอร์ติดต่อ : 062-325-5498</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="camp.html" type="button" class="btn btn-success btn-m "  onclick="loadlocation(this)" name="น้ำตกห้วยแม่ขมิ้น " style="width: 100px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;"><i class="fa-solid fa-book-bookmark" style="margin-right: 10px;"></i>จอง</a>
+                </div>
+                <small class="">250 บาท/คน</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+<footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+  <section class="">
+    <div class="container text-center text-md-start ">
+  
+      <div class="row ">
+    
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+   
+          <h6 class="text-uppercase fw-bold mt-3">LastCamp</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+          <p>
+            
+          </p>
+        </div>
+     
+       
+     
+       
+     
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+    
+          <h6 class="text-uppercase fw-bold mt-3">Contact</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+          <p><i class="fas fa-home mr-3"></i> Nakhon Si Thammarat, 80160, Tha Sala</p>
+          <p><i class="fas fa-envelope mr-3"></i> lastcamp@gmail.com</p>
+          <p><i class="fas fa-phone mr-3"></i> + 0 7552 1089</p>
+          <p><i class="fas fa-print mr-3"></i> + 0 7552 1010</p>
+        </div>
+       
+      </div>
+   
+    </div>
+  </section>
+
+ 
+</footer>   
+    
+     
+      
+    
+    </body>
+</html>

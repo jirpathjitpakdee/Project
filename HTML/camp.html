@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link CSS Style -->
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/camp.css">
+    <!-- link JavaScript -->
+    <script src="/JS/index.js"></script>
+    <script src="/JS/login.js"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap'); </style>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); </style>
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
+    <title>Camp</title>
+</head>
+
+<body  onload="loadname(),loadlocation2()" style="background-image: linear-gradient(130deg, #1abc9c, #2ecc71); background-repeat: no-repeat; height: 100%;">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index_login.html" style="font-family: 'Permanent Marker', cursive;"><i class="fa-sharp fa-solid fa-campground text-success" style="margin-right: 10px;"></i>Last Camp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index_login.html">หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " href="table.html">รายการจอง</a>
+                </li>
+                
+            </ul>
+            <div class="dropdown">
+                <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="mdo" width="32" height="32" class="rounded-circle"><span id="User"></span>
+                </a>
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                  <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <main style="background-image: linear-gradient(130deg, #1abc9c, #2ecc71); background-repeat: no-repeat; height: 100%; display: flex; align-items: center;">
+        <div class="container card">
+        
+            <div class="camps_reservation_page_zone mt-5">
+                <form
+                    action="https://what-the-camp.com/reservation/ratsamee-farm-%E0%B8%A3%E0%B8%B1%E0%B8%A8%E0%B8%A1%E0%B8%B5%E0%B8%9F%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%A1"
+                    method="post" id="reservation">
+                    <input type="hidden" name="_token" value="u0QifBMwX8mrdvBn5FTTcR9822KgRoB7hNf4hk5N"> <input
+                        type="hidden" id="checkin" name="checkin">
+                    <input type="hidden" id="checkout" name="checkout">
+                    <div class="row mt-2">
+                        <div class="col-12 col-lg-4 mb-5 reservation_focus" id="reservation_focus">
+                            <h4 class="mb-3 text-main-light"><b>Step 1</b></h4>
+                            <h5>
+                                <b>เลือกวันที่ต้องการเข้าพัก</b>
+                            </h5>
+                          
+                            <hr>
+                            <div class="text-left">
+                                <label><b>สถานที่</b> <span class="text-danger">*</span></label>
+                                <div class="form-group text-center d-flex justify-content-center">
+                                    <input type="txet" id="location" name="location"class="form-control form-control-lg check border border-success border-2"
+                                         minlength="2" maxlength="190"
+                                        required="" value=""  disabled style="font-size: 16px; margin-bottom: 10px; width: 251px;">
+                                </div>
+                                <label><b>วัน Check-in</b> <span class="text-danger ">*</span></label>
+                                <div class="form-group text-center">
+                                    <input type="date" id="CheckIn" name="CheckIn"class="form-control form-control-lg check border border-success border-2"
+                                         minlength="2" maxlength="190"
+                                        required="" value="" oninput="CheckReq()">
+                                </div>
+                                <label><b>เวลา</b> <span class="text-danger">*</span></label>
+                                <div class="form-group text-center">
+                                    <input type="time" id="TimeIn" name="TimeIn"class="form-control form-control-lg check border border-success border-2"
+                                         minlength="2" maxlength="190"
+                                        required="" value="" oninput="CheckReq()">
+                                </div>
+
+                                <label><b>วัน Check-out</b> <span class="text-danger ">*</span></label>
+                                <div class="form-group text-center">
+                                    <input type="date" id="CheckOut" name="CheckOut"class="form-control form-control-lg check border border-success border-2"
+                                         minlength="2" maxlength="190"
+                                        required="" value="" oninput="CheckReq()">                   
+                                </div>
+                                
+                                
+                                <h4 class="text-main-dark mt-2 mb-1 font-weight-bold line175" id="date_reserve_picker_date">
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-5">
+                            <h4 class="mb-3 text-main-light"><b>Step 2</b></h4>
+                            <h5><b>จำนวนผู้เข้าพัก</b></h5>
+                            <hr>
+                            <div class="form-group">
+                                <label>
+                                    <b>ผู้ใหญ่</b> <span class="text-main-light">(250 บาท/คน/คืน)</span>
+                                    <br>
+                                    <span class="text-muted">ผู้ใหญ่และเด็กอายุตั้งแต่ 6 ปีขึ้นไป</span>
+                                </label>
+    
+                                <div class="camps_reservation_input_camper_zone">
+                                    <span class="btn btn-sm btn-danger  btn-camper disabled"
+                                        id="decrement_camper_normal"  onclick="Del1(),Check(),CheckReq()" >-</span>
+                                    <input type="number" class="form-control camps_reservation_input_camper_number border border-success border-1 shadow-sm"
+                                        value="0" id="camper_normal" name="camper_normal" step="1" min="1" max="40"
+                                        inputmode="decimal">
+                                    <span class="btn btn-sm btn-success  btn-camper" id="increment_camper_normal" onclick="Add1(),Check(),CheckReq()" >+</span>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="form-group">
+                                <label><b>เด็กต่ำกว่า 6 ขวบ</b> <span class="text-main-light">(ฟรี)</span></label>
+                                <div class="camps_reservation_input_camper_zone">
+                                    <span class="btn btn-sm btn-danger mr-3 btn-camper disabled" id="decrement_camper_kids" onclick="Del2(),Check()">-
+                                    </span>
+                                    <input type="number" class="form-control camps_reservation_input_camper_number border border-success border-1"
+                                        value="0" id="camper_kids" name="camper_kids" step="1" min="0" max="40"
+                                        inputmode="decimal">
+                                    <span class="btn btn-sm btn-success ml-3 btn-camper" id="increment_camper_kids" onclick="Add2(),Check()">+</span>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="form-group">
+                                <label><b>ผู้สูงอายุ 60 ปีขึ้นไป</b> <span class="text-main-light">(ฟรี)</span></label>
+                                <div class="camps_reservation_input_camper_zone">
+                                    <span class="btn btn-sm btn-danger mr-3 btn-camper disabled" id="decrement_camper_elder" onclick="Del3(),Check()">-
+                                    </span>
+                                    <input type="number" class="form-control camps_reservation_input_camper_number border border-success border-1"
+                                        value="0" id="camper_elder" name="camper_elder" step="1" min="0" max="40"
+                                        inputmode="decimal">
+                                    <span class="btn btn-sm btn-success ml-3 btn-camper" id="increment_camper_elder" onclick="Add3(),Check()">+</span>
+                                </div>
+                                <hr>
+                            </div>
+                            
+                        </div>
+                        <div class="col-12 col-lg-4 mb-5">
+                            <h4 class="mb-3 text-main-light"><b>Step 3</b></h4>
+                            <h5><b>ข้อมูลเบิ้องต้น</b></h5>
+                            <hr>
+                            <div class="form-group">
+                                <label>ชื่อ (ใช้สำหรับ Check-in) <span class="text-danger">*</span></label>
+                                <input type="text" name="name" id="name" class="form-control form-control-lg border border-success border-2"
+                                    placeholder="ชื่อจริง (ใช้สำหรับ Check-in)" minlength="2" maxlength="190"
+                                    required="" value="" oninput="CheckReq()">
+                            </div>
+                            <div class="form-group">
+                                <label>เบอร์โทร (ใช้สำหรับ Check-in) <span class="text-danger">*</span></label>
+                                <input type="text" name="mobile" id="mobile" class="form-control form-control-lg border border-success border-2"
+                                    placeholder="เบอร์โทร (ใช้สำหรับ Check-in)" minlength="8" maxlength="12" required=""
+                                    value="" oninput="CheckReq()">
+                            </div>
+                           
+                            <div class="form-group">
+                               
+                                <small class="text-main-light">* แคมป์จะโทรติดต่อกลับไปเพื่อแจ้งรายละเอียดการเข้าพัก</small>
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <div class=" text-center">
+                                <button class="btn btn-lg btn-main-light mt-2 mb-3 btn-success disabled " id="confirmation_reservation" type="submit" onclick="Create()" style="height: 60px;" >
+                                    ดำเนินการต่อ
+                                </button>
+                                <br>
+                              
+                                <br>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </form>
+    
+            </div>
+        </div>
+    </main>
+   
+  
+</body>
+
+</html>

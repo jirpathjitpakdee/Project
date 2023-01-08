@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+span{
+    width: 50px;
+}
+
+
+#camper_normal {
+    display: inline;
+    width: 100px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#camper_kids{
+    display: inline;
+    width: 100px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#camper_elder{
+    display: inline;
+    width: 100px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.camps_reservation_input_camper_zone{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.camps_reservation_input_camper_zone .btn{
+    font-size: 20px;
+}
+
+
+#name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+} 
+
+#name::placeholder{
+    font-size: 16px;
+}
+
+#mobile{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#mobile::placeholder{
+    font-size: 16px;
+}
+
+#CheckIn{
+    display: inline;
+    width: 250px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#TimeIn{
+    display: inline;
+    width: 250px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#CheckOut{
+    display: inline;
+    width: 250px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#TimeOut{
+    display: inline;
+    width: 250px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.check{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

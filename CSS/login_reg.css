@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dropdown {
+    margin-right: 100px;
+}
+
+
+
+.login
+    {
+        width: 500px;
+        margin-top: 6rem ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.btn-xl {
+    width:200px;    
+    }
+
+.reg{
+    width: 500px;
+    margin-top: 6rem ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box_shadow{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    
+}
+
+
+.font_size{
+    font-size: 30px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, );
+    
+}
+
+span {
+    color: red;
+    margin-left: 10px;
+}
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!-- link CSS Style -->
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/profile.css">
+    <!-- link JavaScript -->
+    <script src="/JS/index.js"></script>
+    <script src="/JS/login.js"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); </style>
+
+    <title>Last Camp</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+    </style>
+
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
+</head>
+
+<body  onload="loadname(),loadname2()">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index_login.html" style="font-family: 'Permanent Marker', cursive;"><i class="fa-sharp fa-solid fa-campground text-success" style="margin-right: 10px;"></i>Last Camp</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                  <a class="nav-link active " aria-current="page" href="index_login.html">หน้าหลัก</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link " href="table.html">รายการจอง</a>
+                  </li>
+              </ul>
+              <div class="dropdown">
+                  <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="mdo" width="32" height="32" class="rounded-circle" ><span id="User"></span>
+                  </a>
+                  <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="index.html">Sign out</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="vh-100" style="background-image: linear-gradient(130deg, #1abc9c, #2ecc71); background-repeat: no-repeat; height: 100vh;">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col col-lg-6 mb-4 mb-lg-0">
+                        <div class="card mb-3" style="border-radius: .5rem;">
+                            <div class="row g-0">
+                                <div class="col-md-4 mt-0 gradient-custom text-center text-white"
+                                    style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                                        alt="Avatar" class="img-fluid my-5" style="width: 80px;"><br>
+                                    <span id="username2" style="font-size: 2rem;"></span>
+                                    <p class="text-dark"></p>
+                                    <button type="button" class="btn btn-default btn-circle" onclick="edit_profile()"  id="loca1"> <i class="far fa-edit mb-5 " style="font-size: 20px; color: white;"></i></button>
+                                    
+                                  
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body p-4">
+                                        <h6>Information</h6>
+                                        <hr class="mt-0 mb-4">
+                                        <div class="row pt-1">
+                                            <div class="col-6 mb-3">
+                                                <h6>Username</h6>
+                                                <input id="username3" class="form-control " disabled style="width: 250px;"></input>
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="row pt-1">
+                                            
+                                            <div class="col-6 mb-3">
+                                                <h6>Email</h6>
+                                                <input id="email2" class="form-control " disabled style="width: 250px;"></input>
+                                               
+                                            </div>
+                                         
+                                        </div>
+                                        <h6>Contect</h6>
+                                        <hr class="mt-0 mb-4">
+                                        <div class="row pt-1">
+                                            <div class="d-flex justify-content ">
+                                                <input id="mobile2" disabled class="form-control" style="width: 250px;"></input>
+                                                <input id="password" hidden class="form-control" style="width: 200px;"></input>
+                                               
+                                            </div>
+                                            
+                                           
+                                        </div>
+                                        <div class="d-flex justify-content-end ">
+                                            <button id="cancel" class="btn btn-danger" style="margin-top: 10px; margin-right: 10px;" onclick="cancel()" hidden>ยกเลิก</button>
+                                            <button id="save" class="btn btn-success" style="margin-top: 10px;  " onclick="save()" hidden>บันทึก</button>
+                                           
+                                        </div>
+                                        
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        
+        
+
+    </main>
+
+
+
+
+
+</body>
+
+</html>

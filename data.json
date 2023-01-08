@@ -1,0 +1,35 @@
+{
+  "record": [
+    {
+      "location": "ปางหวัน โฮมสเตย์ สวนผึ้ง",
+      "name": "Nattanan",
+      "mobile": "0972175684",
+      "Checkin": "2023-01-07",
+      "Checkout": "2023-01-08",
+      "Timein": "11:06",
+      "camper": {
+        "camper_normal": "3",
+        "camper_kids": "0",
+        "camper_elder": "0"
+      },
+      "owner": "2",
+      "id": 1
+    }
+  ],
+  "account": [
+    {
+      "id": 1,
+      "username": "Test01",
+      "email": "Test01@gmail.com",
+      "mobile": "123456789",
+      "password": "1234"
+    },
+    {
+      "username": "ikiki478",
+      "email": "nattanan4398@gmail.com",
+      "password": "1234",
+      "mobile": "0972175684",
+      "id": 2
+    }
+  ]
+}
